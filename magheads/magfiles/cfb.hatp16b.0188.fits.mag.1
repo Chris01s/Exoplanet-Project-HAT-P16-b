@@ -1,0 +1,135 @@
+#K IRAF       = NOAO/IRAFV2.16.1        version    %-23s     
+#K USER       = chris                   name       %-23s     
+#K HOST       = INTERCEPTOR             computer   %-23s     
+#K DATE       = 2018-02-12              yyyy-mm-dd %-23s     
+#K TIME       = 18:58:02                hh:mm:ss   %-23s     
+#K PACKAGE    = apphot                  name       %-23s     
+#K TASK       = phot                    name       %-23s     
+#
+#K SCALE      = 1.                      units      %-23.7g   
+#K FWHMPSF    = 4.5                     scaleunit  %-23.7g   
+#K EMISSION   = yes                     switch     %-23b     
+#K DATAMIN    = -60.                    counts     %-23.7g   
+#K DATAMAX    = 150000.                 counts     %-23.7g   
+#K EXPOSURE   = exptime                 keyword    %-23s     
+#K AIRMASS    = airmass                 keyword    %-23s     
+#K FILTER     = filter                  keyword    %-23s     
+#K OBSTIME    = hjd                     keyword    %-23s     
+#
+#K NOISE      = constant                model      %-23s     
+#K SIGMA      = 2.832                   counts     %-23.7g   
+#K GAIN       = gain1                   keyword    %-23s     
+#K EPADU      = 3.17                    e-/adu     %-23.7g   
+#K CCDREAD    = rdnoise1                keyword    %-23s     
+#K READNOISE  = 5.7                     e-         %-23.7g   
+#
+#K CALGORITHM = centroid                algorithm  %-23s     
+#K CBOXWIDTH  = 15.                     scaleunit  %-23.7g   
+#K CTHRESHOLD = 0.                      sigma      %-23.7g   
+#K MINSNRATIO = 1.                      number     %-23.7g   
+#K CMAXITER   = 10                      number     %-23d     
+#K MAXSHIFT   = 0.05                    scaleunit  %-23.7g   
+#K CLEAN      = no                      switch     %-23b     
+#K RCLEAN     = 1.                      scaleunit  %-23.7g   
+#K RCLIP      = 2.                      scaleunit  %-23.7g   
+#K KCLEAN     = 3.                      sigma      %-23.7g   
+#
+#K SALGORITHM = median                  algorithm  %-23s     
+#K ANNULUS    = 16.                     scaleunit  %-23.7g   
+#K DANNULUS   = 71.                     scaleunit  %-23.7g   
+#K SKYVALUE   = 0.                      counts     %-23.7g   
+#K KHIST      = 3.                      sigma      %-23.7g   
+#K BINSIZE    = 0.1                     sigma      %-23.7g   
+#K SMOOTH     = no                      switch     %-23b     
+#K SMAXITER   = 10                      number     %-23d     
+#K SLOCLIP    = 0.                      percent    %-23.7g   
+#K SHICLIP    = 0.                      percent    %-23.7g   
+#K SNREJECT   = 50                      number     %-23d     
+#K SLOREJECT  = 3.                      sigma      %-23.7g   
+#K SHIREJECT  = 3.                      sigma      %-23.7g   
+#K RGROW      = 0.                      scaleunit  %-23.7g   
+#
+#K WEIGHTING  = constant                model      %-23s     
+#K APERTURES  = 10.00                   scaleunit  %-23s     
+#K ZMAG       = 23.2                    zeropoint  %-23.7g   
+#
+#N IMAGE               XINIT     YINIT     ID    COORDS                 LID    \
+#U imagename           pixels    pixels    ##    filename               ##     \
+#F %-23s               %-10.3f   %-10.3f   %-6d  %-23s                  %-6d    
+#
+#N XCENTER    YCENTER    XSHIFT  YSHIFT  XERR    YERR            CIER CERROR   \
+#U pixels     pixels     pixels  pixels  pixels  pixels          ##   cerrors  \
+#F %-14.3f    %-11.3f    %-8.3f  %-8.3f  %-8.3f  %-15.3f         %-5d %-9s      
+#
+#N MSKY           STDEV          SSKEW          NSKY   NSREJ     SIER SERROR   \
+#U counts         counts         counts         npix   npix      ##   serrors  \
+#F %-18.7g        %-15.7g        %-15.7g        %-7d   %-9d      %-5d %-9s      
+#
+#N ITIME          XAIRMASS       IFILTER                OTIME                  \
+#U timeunit       number         name                   timeunit               \
+#F %-18.7g        %-15.7g        %-23s                  %-23s                   
+#
+#N RAPERT   SUM           AREA       FLUX          MAG    MERR   PIER PERROR   \
+#U scale    counts        pixels     counts        mag    mag    ##   perrors  \
+#F %-12.2f  %-14.7g       %-11.7g    %-14.7g       %-7.3f %-6.3f %-5d %-9s      
+#
+cfb.hatp16b.0188.fits  802.439   714.285   1     xyfile                 1      \
+   800.225    713.940    -2.214  -0.344  0.004   0.003          107  BigShift  \
+   10.2137        2.804808       1.678659       21962  1011     0    NoError   \
+   45.            1.116771       Bessell-U              2456598.80938372       \
+   10.00    341534.5      314.3186   338324.2      13.510 0.000 0    NoError    
+cfb.hatp16b.0188.fits  847.229   708.313   2     xyfile                 2      \
+   848.407    709.925    1.178   1.612   0.020   0.019          107  BigShift  \
+   10.34912       2.906294       1.829483       21083  1895     0    NoError   \
+   45.            1.116771       Bessell-U              2456598.80938372       \
+   10.00    13195.8       314.4704   9941.305      17.339 0.006 0    NoError    
+cfb.hatp16b.0188.fits  900.977   684.425   3     xyfile                 3      \
+   902.511    687.569    1.534   3.144   0.008   0.007          107  BigShift  \
+   9.989592       2.684536       1.207473       22684  281      0    NoError   \
+   45.            1.116771       Bessell-U              2456598.80938372       \
+   10.00    72797.6       314.1699   69659.17      15.226 0.001 0    NoError    
+cfb.hatp16b.0188.fits  718.832   809.837   4     xyfile                 4      \
+   719.544    812.404    0.712   2.567   0.018   0.017          107  BigShift  \
+   9.484865       2.561407       0.9898141      22776  196      0    NoError   \
+   45.            1.116771       Bessell-U              2456598.80938372       \
+   10.00    15335.16      314.2473   12354.57      17.103 0.004 0    NoError    
+cfb.hatp16b.0188.fits  551.617   69.313    5     xyfile                 5      \
+   553.193    72.957     1.576   3.644   0.006   0.006          107  BigShift  \
+   9.279672       2.622464       1.131458       21923  95       0    NoError   \
+   45.            1.116771       Bessell-U              2456598.80938372       \
+   10.00    125695.       314.3341   122778.1      14.610 0.000 0    NoError    
+cfb.hatp16b.0188.fits  312.738   143.962   6     xyfile                 6      \
+   312.258    146.614    -0.480  2.652   0.010   0.009          107  BigShift  \
+   9.132922       2.572278       0.9402688      22619  359      0    NoError   \
+   45.            1.116771       Bessell-U              2456598.80938372       \
+   10.00    41611.73      314.4366   38740.01      15.863 0.001 0    NoError    
+cfb.hatp16b.0188.fits  736.748   275.346   7     xyfile                 7      \
+   737.925    278.229    1.177   2.883   0.018   0.017          107  BigShift  \
+   9.557029       2.515304       0.927978       22816  157      0    NoError   \
+   45.            1.116771       Bessell-U              2456598.80938372       \
+   10.00    15433.66      314.3393   12429.51      17.097 0.004 0    NoError    
+cfb.hatp16b.0188.fits  1056.248  487.350   8     xyfile                 8      \
+   1057.115   488.409    0.867   1.059   0.018   0.017          107  BigShift  \
+   10.48945       2.679865       1.026784       22895  83       0    NoError   \
+   45.            1.116771       Bessell-U              2456598.80938372       \
+   10.00    15087.64      314.4853   11788.86      17.154 0.004 0    NoError    
+cfb.hatp16b.0188.fits  1283.183  639.636   9     xyfile                 9      \
+   1284.759   642.581    1.576   2.945   0.014   0.013          107  BigShift  \
+   10.18161       2.954595       1.10739        22570  138      0    NoError   \
+   45.            1.116771       Bessell-U              2456598.80938372       \
+   10.00    24833.29      314.4582   21631.6       16.495 0.003 0    NoError    
+cfb.hatp16b.0188.fits  1307.071  914.346   10    xyfile                 10     \
+   1306.967   916.874    -0.104  2.528   0.007   0.006          107  BigShift  \
+   9.996572       3.122855       1.363558       20251  188      0    NoError   \
+   45.            1.116771       Bessell-U              2456598.80938372       \
+   10.00    98693.55      314.464    95549.99      14.882 0.001 0    NoError    
+cfb.hatp16b.0188.fits  921.879   1084.547  11    xyfile                 11     \
+   921.348    1086.455   -0.531  1.908   0.008   0.007          107  BigShift  \
+   9.559725       2.767086       1.122892       17111  61       0    NoError   \
+   45.            1.116771       Bessell-U              2456598.80938372       \
+   10.00    68247.59      314.3806   65242.2       15.297 0.001 0    NoError    
+cfb.hatp16b.0188.fits  363.500   803.865   12    xyfile                 12     \
+   363.083    805.451    -0.417  1.586   0.022   0.019          107  BigShift  \
+   8.978088       2.509603       0.9649363      22895  80       0    NoError   \
+   45.            1.116771       Bessell-U              2456598.80938372       \
+   10.00    10932.22      314.4754   8108.834      17.561 0.006 0    NoError    
