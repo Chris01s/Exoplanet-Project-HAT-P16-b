@@ -8,7 +8,7 @@ hjd = np.loadtxt("mag_10/hjd.txt")
 #get target flux and mean of reference stars
 f_target = data[:,0]
 stdev = []
-f_ref_all = np.sum(data[:,1:],axis=1)
+f_ref_all = np.mean(data[:,1:],axis=1)
 f_norm = (f_target/f_ref_all)[1:]
 
 #flux out of transit
